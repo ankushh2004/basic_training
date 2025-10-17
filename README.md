@@ -1,1 +1,1 @@
-![Basic Training Solution Submissions]
+Basic Training Solution Submissions
