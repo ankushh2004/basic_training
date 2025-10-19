@@ -12,6 +12,9 @@ function secondLargest(array) {
   }
   return sLargest;
 }
+// Time Complexity => O(n)
+// Space Complexity => O(1)
+
 
 // Problem 2: Complete the calculateFrequency function that takes lowercase string as input and returns frequency of all english alphabet. (using only array, no in-built function)
 function calculateFrequency(string) {
@@ -28,6 +31,9 @@ function calculateFrequency(string) {
   }
   return frequency;
 }
+// Time Complexity => O(n)
+// Space Complexity => O(1)
+
 
 // Problem 3: Complete the flatten function that takes a JS Object, returns a JS Object in flatten format (compressed)
 function flatten(unflatObject) {
@@ -69,6 +75,10 @@ function flatten(unflatObject) {
   helper(unflatObject, "");
   return result;
 }
+// Time Complexity => O(n * m), where m is the maximum depth of nesting
+// Space Complexity => O(n + m), where m is extra space for maximum depth 
+
+
 
 // Problem 4: Complete the unflatten function that takes a JS Object, returns a JS Object in unflatten format
 function unflatten(flatObject) {
@@ -97,3 +107,6 @@ function unflatten(flatObject) {
   }
   return result;
 }
+// Time Complexity => O(n * m), where m is the length of the spilitting array
+// Space Complexity => O(n)
+ 
