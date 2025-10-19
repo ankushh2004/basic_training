@@ -1,0 +1,633 @@
+{
+	"info": {
+		"_postman_id": "c8b5f526-5f10-4cf4-9798-1de0db624457",
+		"name": "SWAPI Collection",
+		"description": "This is the Collection of all the SWAPI's.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49061809",
+		"_collection_link": "https://asanodiya-839453.postman.co/workspace/Ankush-Sanodiya's-Workspace~44f8089e-95a8-411c-8afb-0c555e98a93b/collection/49061809-c8b5f526-5f10-4cf4-9798-1de0db624457?action=share&source=collection_link&creator=49061809"
+	},
+	"item": [
+		{
+			"name": "GET all API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET all API",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.16.1"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Oct 2025 06:59:35 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "ETag",
+							"value": "\"62d89cf607f7b22eb4e22267457e26b0\""
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"people\": \"https://swapi.dev/api/people/\",\n    \"planets\": \"https://swapi.dev/api/planets/\",\n    \"films\": \"https://swapi.dev/api/films/\",\n    \"species\": \"https://swapi.dev/api/species/\",\n    \"vehicles\": \"https://swapi.dev/api/vehicles/\",\n    \"starships\": \"https://swapi.dev/api/starships/\"\n}"
+				}
+			]
+		},
+		{
+			"name": "GET all Planets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/planets/",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"planets",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET all Planets",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/planets/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"planets",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.16.1"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Oct 2025 05:15:46 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "ETag",
+							"value": "\"bc01c94507d5dcf4829b239cde8748fb\""
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 60,\n    \"next\": \"https://swapi.dev/api/planets/?page=2\",\n    \"previous\": null,\n    \"results\": [\n        {\n            \"name\": \"Tatooine\",\n            \"rotation_period\": \"23\",\n            \"orbital_period\": \"304\",\n            \"diameter\": \"10465\",\n            \"climate\": \"arid\",\n            \"gravity\": \"1 standard\",\n            \"terrain\": \"desert\",\n            \"surface_water\": \"1\",\n            \"population\": \"200000\",\n            \"residents\": [\n                \"https://swapi.dev/api/people/1/\",\n                \"https://swapi.dev/api/people/2/\",\n                \"https://swapi.dev/api/people/4/\",\n                \"https://swapi.dev/api/people/6/\",\n                \"https://swapi.dev/api/people/7/\",\n                \"https://swapi.dev/api/people/8/\",\n                \"https://swapi.dev/api/people/9/\",\n                \"https://swapi.dev/api/people/11/\",\n                \"https://swapi.dev/api/people/43/\",\n                \"https://swapi.dev/api/people/62/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/4/\",\n                \"https://swapi.dev/api/films/5/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"created\": \"2014-12-09T13:50:49.641000Z\",\n            \"edited\": \"2014-12-20T20:58:18.411000Z\",\n            \"url\": \"https://swapi.dev/api/planets/1/\"\n        },\n        {\n            \"name\": \"Alderaan\",\n            \"rotation_period\": \"24\",\n            \"orbital_period\": \"364\",\n            \"diameter\": \"12500\",\n            \"climate\": \"temperate\",\n            \"gravity\": \"1 standard\",\n            \"terrain\": \"grasslands, mountains\",\n            \"surface_water\": \"40\",\n            \"population\": \"2000000000\",\n            \"residents\": [\n                \"https://swapi.dev/api/people/5/\",\n                \"https://swapi.dev/api/people/68/\",\n                \"https://swapi.dev/api/people/81/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"created\": \"2014-12-10T11:35:48.479000Z\",\n            \"edited\": \"2014-12-20T20:58:18.420000Z\",\n            \"url\": \"https://swapi.dev/api/planets/2/\"\n        },\n        {\n            \"name\": \"Yavin IV\",\n            \"rotation_period\": \"24\",\n            \"orbital_period\": \"4818\",\n            \"diameter\": \"10200\",\n            \"climate\": \"temperate, tropical\",\n            \"gravity\": \"1 standard\",\n            \"terrain\": \"jungle, rainforests\",\n            \"surface_water\": \"8\",\n            \"population\": \"1000\",\n            \"residents\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\"\n            ],\n            \"created\": \"2014-12-10T11:37:19.144000Z\",\n            \"edited\": \"2014-12-20T20:58:18.421000Z\",\n            \"url\": \"https://swapi.dev/api/planets/3/\"\n        },\n        {\n            \"name\": \"Hoth\",\n            \"rotation_period\": \"23\",\n            \"orbital_period\": \"549\",\n            \"diameter\": \"7200\",\n            \"climate\": \"frozen\",\n            \"gravity\": \"1.1 standard\",\n            \"terrain\": \"tundra, ice caves, mountain ranges\",\n            \"surface_water\": \"100\",\n            \"population\": \"unknown\",\n            \"residents\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\"\n            ],\n            \"created\": \"2014-12-10T11:39:13.934000Z\",\n            \"edited\": \"2014-12-20T20:58:18.423000Z\",\n            \"url\": \"https://swapi.dev/api/planets/4/\"\n        },\n        {\n            \"name\": \"Dagobah\",\n            \"rotation_period\": \"23\",\n            \"orbital_period\": \"341\",\n            \"diameter\": \"8900\",\n            \"climate\": \"murky\",\n            \"gravity\": \"N/A\",\n            \"terrain\": \"swamp, jungles\",\n            \"surface_water\": \"8\",\n            \"population\": \"unknown\",\n            \"residents\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"created\": \"2014-12-10T11:42:22.590000Z\",\n            \"edited\": \"2014-12-20T20:58:18.425000Z\",\n            \"url\": \"https://swapi.dev/api/planets/5/\"\n        },\n        {\n            \"name\": \"Bespin\",\n            \"rotation_period\": \"12\",\n            \"orbital_period\": \"5110\",\n            \"diameter\": \"118000\",\n            \"climate\": \"temperate\",\n            \"gravity\": \"1.5 (surface), 1 standard (Cloud City)\",\n            \"terrain\": \"gas giant\",\n            \"surface_water\": \"0\",\n            \"population\": \"6000000\",\n            \"residents\": [\n                \"https://swapi.dev/api/people/26/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\"\n            ],\n            \"created\": \"2014-12-10T11:43:55.240000Z\",\n            \"edited\": \"2014-12-20T20:58:18.427000Z\",\n            \"url\": \"https://swapi.dev/api/planets/6/\"\n        },\n        {\n            \"name\": \"Endor\",\n            \"rotation_period\": \"18\",\n            \"orbital_period\": \"402\",\n            \"diameter\": \"4900\",\n            \"climate\": \"temperate\",\n            \"gravity\": \"0.85 standard\",\n            \"terrain\": \"forests, mountains, lakes\",\n            \"surface_water\": \"8\",\n            \"population\": \"30000000\",\n            \"residents\": [\n                \"https://swapi.dev/api/people/30/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-10T11:50:29.349000Z\",\n            \"edited\": \"2014-12-20T20:58:18.429000Z\",\n            \"url\": \"https://swapi.dev/api/planets/7/\"\n        },\n        {\n            \"name\": \"Naboo\",\n            \"rotation_period\": \"26\",\n            \"orbital_period\": \"312\",\n            \"diameter\": \"12120\",\n            \"climate\": \"temperate\",\n            \"gravity\": \"1 standard\",\n            \"terrain\": \"grassy hills, swamps, forests, mountains\",\n            \"surface_water\": \"12\",\n            \"population\": \"4500000000\",\n            \"residents\": [\n                \"https://swapi.dev/api/people/3/\",\n                \"https://swapi.dev/api/people/21/\",\n                \"https://swapi.dev/api/people/35/\",\n                \"https://swapi.dev/api/people/36/\",\n                \"https://swapi.dev/api/people/37/\",\n                \"https://swapi.dev/api/people/38/\",\n                \"https://swapi.dev/api/people/39/\",\n                \"https://swapi.dev/api/people/42/\",\n                \"https://swapi.dev/api/people/60/\",\n                \"https://swapi.dev/api/people/61/\",\n                \"https://swapi.dev/api/people/66/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/4/\",\n                \"https://swapi.dev/api/films/5/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"created\": \"2014-12-10T11:52:31.066000Z\",\n            \"edited\": \"2014-12-20T20:58:18.430000Z\",\n            \"url\": \"https://swapi.dev/api/planets/8/\"\n        },\n        {\n            \"name\": \"Coruscant\",\n            \"rotation_period\": \"24\",\n            \"orbital_period\": \"368\",\n            \"diameter\": \"12240\",\n            \"climate\": \"temperate\",\n            \"gravity\": \"1 standard\",\n            \"terrain\": \"cityscape, mountains\",\n            \"surface_water\": \"unknown\",\n            \"population\": \"1000000000000\",\n            \"residents\": [\n                \"https://swapi.dev/api/people/34/\",\n                \"https://swapi.dev/api/people/55/\",\n                \"https://swapi.dev/api/people/74/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/4/\",\n                \"https://swapi.dev/api/films/5/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"created\": \"2014-12-10T11:54:13.921000Z\",\n            \"edited\": \"2014-12-20T20:58:18.432000Z\",\n            \"url\": \"https://swapi.dev/api/planets/9/\"\n        },\n        {\n            \"name\": \"Kamino\",\n            \"rotation_period\": \"27\",\n            \"orbital_period\": \"463\",\n            \"diameter\": \"19720\",\n            \"climate\": \"temperate\",\n            \"gravity\": \"1 standard\",\n            \"terrain\": \"ocean\",\n            \"surface_water\": \"100\",\n            \"population\": \"1000000000\",\n            \"residents\": [\n                \"https://swapi.dev/api/people/22/\",\n                \"https://swapi.dev/api/people/72/\",\n                \"https://swapi.dev/api/people/73/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/5/\"\n            ],\n            \"created\": \"2014-12-10T12:45:06.577000Z\",\n            \"edited\": \"2014-12-20T20:58:18.434000Z\",\n            \"url\": \"https://swapi.dev/api/planets/10/\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET all Films",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/films/",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"films",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET all Films",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/films/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"films",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.16.1"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Oct 2025 06:59:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "ETag",
+							"value": "\"73dffe18f022f65acc88f914f65f2922\""
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 6,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"title\": \"A New Hope\",\n            \"episode_id\": 4,\n            \"opening_crawl\": \"It is a period of civil war.\\r\\nRebel spaceships, striking\\r\\nfrom a hidden base, have won\\r\\ntheir first victory against\\r\\nthe evil Galactic Empire.\\r\\n\\r\\nDuring the battle, Rebel\\r\\nspies managed to steal secret\\r\\nplans to the Empire's\\r\\nultimate weapon, the DEATH\\r\\nSTAR, an armored space\\r\\nstation with enough power\\r\\nto destroy an entire planet.\\r\\n\\r\\nPursued by the Empire's\\r\\nsinister agents, Princess\\r\\nLeia races home aboard her\\r\\nstarship, custodian of the\\r\\nstolen plans that can save her\\r\\npeople and restore\\r\\nfreedom to the galaxy....\",\n            \"director\": \"George Lucas\",\n            \"producer\": \"Gary Kurtz, Rick McCallum\",\n            \"release_date\": \"1977-05-25\",\n            \"characters\": [\n                \"https://swapi.dev/api/people/1/\",\n                \"https://swapi.dev/api/people/2/\",\n                \"https://swapi.dev/api/people/3/\",\n                \"https://swapi.dev/api/people/4/\",\n                \"https://swapi.dev/api/people/5/\",\n                \"https://swapi.dev/api/people/6/\",\n                \"https://swapi.dev/api/people/7/\",\n                \"https://swapi.dev/api/people/8/\",\n                \"https://swapi.dev/api/people/9/\",\n                \"https://swapi.dev/api/people/10/\",\n                \"https://swapi.dev/api/people/12/\",\n                \"https://swapi.dev/api/people/13/\",\n                \"https://swapi.dev/api/people/14/\",\n                \"https://swapi.dev/api/people/15/\",\n                \"https://swapi.dev/api/people/16/\",\n                \"https://swapi.dev/api/people/18/\",\n                \"https://swapi.dev/api/people/19/\",\n                \"https://swapi.dev/api/people/81/\"\n            ],\n            \"planets\": [\n                \"https://swapi.dev/api/planets/1/\",\n                \"https://swapi.dev/api/planets/2/\",\n                \"https://swapi.dev/api/planets/3/\"\n            ],\n            \"starships\": [\n                \"https://swapi.dev/api/starships/2/\",\n                \"https://swapi.dev/api/starships/3/\",\n                \"https://swapi.dev/api/starships/5/\",\n                \"https://swapi.dev/api/starships/9/\",\n                \"https://swapi.dev/api/starships/10/\",\n                \"https://swapi.dev/api/starships/11/\",\n                \"https://swapi.dev/api/starships/12/\",\n                \"https://swapi.dev/api/starships/13/\"\n            ],\n            \"vehicles\": [\n                \"https://swapi.dev/api/vehicles/4/\",\n                \"https://swapi.dev/api/vehicles/6/\",\n                \"https://swapi.dev/api/vehicles/7/\",\n                \"https://swapi.dev/api/vehicles/8/\"\n            ],\n            \"species\": [\n                \"https://swapi.dev/api/species/1/\",\n                \"https://swapi.dev/api/species/2/\",\n                \"https://swapi.dev/api/species/3/\",\n                \"https://swapi.dev/api/species/4/\",\n                \"https://swapi.dev/api/species/5/\"\n            ],\n            \"created\": \"2014-12-10T14:23:31.880000Z\",\n            \"edited\": \"2014-12-20T19:49:45.256000Z\",\n            \"url\": \"https://swapi.dev/api/films/1/\"\n        },\n        {\n            \"title\": \"The Empire Strikes Back\",\n            \"episode_id\": 5,\n            \"opening_crawl\": \"It is a dark time for the\\r\\nRebellion. Although the Death\\r\\nStar has been destroyed,\\r\\nImperial troops have driven the\\r\\nRebel forces from their hidden\\r\\nbase and pursued them across\\r\\nthe galaxy.\\r\\n\\r\\nEvading the dreaded Imperial\\r\\nStarfleet, a group of freedom\\r\\nfighters led by Luke Skywalker\\r\\nhas established a new secret\\r\\nbase on the remote ice world\\r\\nof Hoth.\\r\\n\\r\\nThe evil lord Darth Vader,\\r\\nobsessed with finding young\\r\\nSkywalker, has dispatched\\r\\nthousands of remote probes into\\r\\nthe far reaches of space....\",\n            \"director\": \"Irvin Kershner\",\n            \"producer\": \"Gary Kurtz, Rick McCallum\",\n            \"release_date\": \"1980-05-17\",\n            \"characters\": [\n                \"https://swapi.dev/api/people/1/\",\n                \"https://swapi.dev/api/people/2/\",\n                \"https://swapi.dev/api/people/3/\",\n                \"https://swapi.dev/api/people/4/\",\n                \"https://swapi.dev/api/people/5/\",\n                \"https://swapi.dev/api/people/10/\",\n                \"https://swapi.dev/api/people/13/\",\n                \"https://swapi.dev/api/people/14/\",\n                \"https://swapi.dev/api/people/18/\",\n                \"https://swapi.dev/api/people/20/\",\n                \"https://swapi.dev/api/people/21/\",\n                \"https://swapi.dev/api/people/22/\",\n                \"https://swapi.dev/api/people/23/\",\n                \"https://swapi.dev/api/people/24/\",\n                \"https://swapi.dev/api/people/25/\",\n                \"https://swapi.dev/api/people/26/\"\n            ],\n            \"planets\": [\n                \"https://swapi.dev/api/planets/4/\",\n                \"https://swapi.dev/api/planets/5/\",\n                \"https://swapi.dev/api/planets/6/\",\n                \"https://swapi.dev/api/planets/27/\"\n            ],\n            \"starships\": [\n                \"https://swapi.dev/api/starships/3/\",\n                \"https://swapi.dev/api/starships/10/\",\n                \"https://swapi.dev/api/starships/11/\",\n                \"https://swapi.dev/api/starships/12/\",\n                \"https://swapi.dev/api/starships/15/\",\n                \"https://swapi.dev/api/starships/17/\",\n                \"https://swapi.dev/api/starships/21/\",\n                \"https://swapi.dev/api/starships/22/\",\n                \"https://swapi.dev/api/starships/23/\"\n            ],\n            \"vehicles\": [\n                \"https://swapi.dev/api/vehicles/8/\",\n                \"https://swapi.dev/api/vehicles/14/\",\n                \"https://swapi.dev/api/vehicles/16/\",\n                \"https://swapi.dev/api/vehicles/18/\",\n                \"https://swapi.dev/api/vehicles/19/\",\n                \"https://swapi.dev/api/vehicles/20/\"\n            ],\n            \"species\": [\n                \"https://swapi.dev/api/species/1/\",\n                \"https://swapi.dev/api/species/2/\",\n                \"https://swapi.dev/api/species/3/\",\n                \"https://swapi.dev/api/species/6/\",\n                \"https://swapi.dev/api/species/7/\"\n            ],\n            \"created\": \"2014-12-12T11:26:24.656000Z\",\n            \"edited\": \"2014-12-15T13:07:53.386000Z\",\n            \"url\": \"https://swapi.dev/api/films/2/\"\n        },\n        {\n            \"title\": \"Return of the Jedi\",\n            \"episode_id\": 6,\n            \"opening_crawl\": \"Luke Skywalker has returned to\\r\\nhis home planet of Tatooine in\\r\\nan attempt to rescue his\\r\\nfriend Han Solo from the\\r\\nclutches of the vile gangster\\r\\nJabba the Hutt.\\r\\n\\r\\nLittle does Luke know that the\\r\\nGALACTIC EMPIRE has secretly\\r\\nbegun construction on a new\\r\\narmored space station even\\r\\nmore powerful than the first\\r\\ndreaded Death Star.\\r\\n\\r\\nWhen completed, this ultimate\\r\\nweapon will spell certain doom\\r\\nfor the small band of rebels\\r\\nstruggling to restore freedom\\r\\nto the galaxy...\",\n            \"director\": \"Richard Marquand\",\n            \"producer\": \"Howard G. Kazanjian, George Lucas, Rick McCallum\",\n            \"release_date\": \"1983-05-25\",\n            \"characters\": [\n                \"https://swapi.dev/api/people/1/\",\n                \"https://swapi.dev/api/people/2/\",\n                \"https://swapi.dev/api/people/3/\",\n                \"https://swapi.dev/api/people/4/\",\n                \"https://swapi.dev/api/people/5/\",\n                \"https://swapi.dev/api/people/10/\",\n                \"https://swapi.dev/api/people/13/\",\n                \"https://swapi.dev/api/people/14/\",\n                \"https://swapi.dev/api/people/16/\",\n                \"https://swapi.dev/api/people/18/\",\n                \"https://swapi.dev/api/people/20/\",\n                \"https://swapi.dev/api/people/21/\",\n                \"https://swapi.dev/api/people/22/\",\n                \"https://swapi.dev/api/people/25/\",\n                \"https://swapi.dev/api/people/27/\",\n                \"https://swapi.dev/api/people/28/\",\n                \"https://swapi.dev/api/people/29/\",\n                \"https://swapi.dev/api/people/30/\",\n                \"https://swapi.dev/api/people/31/\",\n                \"https://swapi.dev/api/people/45/\"\n            ],\n            \"planets\": [\n                \"https://swapi.dev/api/planets/1/\",\n                \"https://swapi.dev/api/planets/5/\",\n                \"https://swapi.dev/api/planets/7/\",\n                \"https://swapi.dev/api/planets/8/\",\n                \"https://swapi.dev/api/planets/9/\"\n            ],\n            \"starships\": [\n                \"https://swapi.dev/api/starships/2/\",\n                \"https://swapi.dev/api/starships/3/\",\n                \"https://swapi.dev/api/starships/10/\",\n                \"https://swapi.dev/api/starships/11/\",\n                \"https://swapi.dev/api/starships/12/\",\n                \"https://swapi.dev/api/starships/15/\",\n                \"https://swapi.dev/api/starships/17/\",\n                \"https://swapi.dev/api/starships/22/\",\n                \"https://swapi.dev/api/starships/23/\",\n                \"https://swapi.dev/api/starships/27/\",\n                \"https://swapi.dev/api/starships/28/\",\n                \"https://swapi.dev/api/starships/29/\"\n            ],\n            \"vehicles\": [\n                \"https://swapi.dev/api/vehicles/8/\",\n                \"https://swapi.dev/api/vehicles/16/\",\n                \"https://swapi.dev/api/vehicles/18/\",\n                \"https://swapi.dev/api/vehicles/19/\",\n                \"https://swapi.dev/api/vehicles/24/\",\n                \"https://swapi.dev/api/vehicles/25/\",\n                \"https://swapi.dev/api/vehicles/26/\",\n                \"https://swapi.dev/api/vehicles/30/\"\n            ],\n            \"species\": [\n                \"https://swapi.dev/api/species/1/\",\n                \"https://swapi.dev/api/species/2/\",\n                \"https://swapi.dev/api/species/3/\",\n                \"https://swapi.dev/api/species/5/\",\n                \"https://swapi.dev/api/species/6/\",\n                \"https://swapi.dev/api/species/8/\",\n                \"https://swapi.dev/api/species/9/\",\n                \"https://swapi.dev/api/species/10/\",\n                \"https://swapi.dev/api/species/15/\"\n            ],\n            \"created\": \"2014-12-18T10:39:33.255000Z\",\n            \"edited\": \"2014-12-20T09:48:37.462000Z\",\n            \"url\": \"https://swapi.dev/api/films/3/\"\n        },\n        {\n            \"title\": \"The Phantom Menace\",\n            \"episode_id\": 1,\n            \"opening_crawl\": \"Turmoil has engulfed the\\r\\nGalactic Republic. The taxation\\r\\nof trade routes to outlying star\\r\\nsystems is in dispute.\\r\\n\\r\\nHoping to resolve the matter\\r\\nwith a blockade of deadly\\r\\nbattleships, the greedy Trade\\r\\nFederation has stopped all\\r\\nshipping to the small planet\\r\\nof Naboo.\\r\\n\\r\\nWhile the Congress of the\\r\\nRepublic endlessly debates\\r\\nthis alarming chain of events,\\r\\nthe Supreme Chancellor has\\r\\nsecretly dispatched two Jedi\\r\\nKnights, the guardians of\\r\\npeace and justice in the\\r\\ngalaxy, to settle the conflict....\",\n            \"director\": \"George Lucas\",\n            \"producer\": \"Rick McCallum\",\n            \"release_date\": \"1999-05-19\",\n            \"characters\": [\n                \"https://swapi.dev/api/people/2/\",\n                \"https://swapi.dev/api/people/3/\",\n                \"https://swapi.dev/api/people/10/\",\n                \"https://swapi.dev/api/people/11/\",\n                \"https://swapi.dev/api/people/16/\",\n                \"https://swapi.dev/api/people/20/\",\n                \"https://swapi.dev/api/people/21/\",\n                \"https://swapi.dev/api/people/32/\",\n                \"https://swapi.dev/api/people/33/\",\n                \"https://swapi.dev/api/people/34/\",\n                \"https://swapi.dev/api/people/35/\",\n                \"https://swapi.dev/api/people/36/\",\n                \"https://swapi.dev/api/people/37/\",\n                \"https://swapi.dev/api/people/38/\",\n                \"https://swapi.dev/api/people/39/\",\n                \"https://swapi.dev/api/people/40/\",\n                \"https://swapi.dev/api/people/41/\",\n                \"https://swapi.dev/api/people/42/\",\n                \"https://swapi.dev/api/people/43/\",\n                \"https://swapi.dev/api/people/44/\",\n                \"https://swapi.dev/api/people/46/\",\n                \"https://swapi.dev/api/people/47/\",\n                \"https://swapi.dev/api/people/48/\",\n                \"https://swapi.dev/api/people/49/\",\n                \"https://swapi.dev/api/people/50/\",\n                \"https://swapi.dev/api/people/51/\",\n                \"https://swapi.dev/api/people/52/\",\n                \"https://swapi.dev/api/people/53/\",\n                \"https://swapi.dev/api/people/54/\",\n                \"https://swapi.dev/api/people/55/\",\n                \"https://swapi.dev/api/people/56/\",\n                \"https://swapi.dev/api/people/57/\",\n                \"https://swapi.dev/api/people/58/\",\n                \"https://swapi.dev/api/people/59/\"\n            ],\n            \"planets\": [\n                \"https://swapi.dev/api/planets/1/\",\n                \"https://swapi.dev/api/planets/8/\",\n                \"https://swapi.dev/api/planets/9/\"\n            ],\n            \"starships\": [\n                \"https://swapi.dev/api/starships/31/\",\n                \"https://swapi.dev/api/starships/32/\",\n                \"https://swapi.dev/api/starships/39/\",\n                \"https://swapi.dev/api/starships/40/\",\n                \"https://swapi.dev/api/starships/41/\"\n            ],\n            \"vehicles\": [\n                \"https://swapi.dev/api/vehicles/33/\",\n                \"https://swapi.dev/api/vehicles/34/\",\n                \"https://swapi.dev/api/vehicles/35/\",\n                \"https://swapi.dev/api/vehicles/36/\",\n                \"https://swapi.dev/api/vehicles/37/\",\n                \"https://swapi.dev/api/vehicles/38/\",\n                \"https://swapi.dev/api/vehicles/42/\"\n            ],\n            \"species\": [\n                \"https://swapi.dev/api/species/1/\",\n                \"https://swapi.dev/api/species/2/\",\n                \"https://swapi.dev/api/species/6/\",\n                \"https://swapi.dev/api/species/11/\",\n                \"https://swapi.dev/api/species/12/\",\n                \"https://swapi.dev/api/species/13/\",\n                \"https://swapi.dev/api/species/14/\",\n                \"https://swapi.dev/api/species/15/\",\n                \"https://swapi.dev/api/species/16/\",\n                \"https://swapi.dev/api/species/17/\",\n                \"https://swapi.dev/api/species/18/\",\n                \"https://swapi.dev/api/species/19/\",\n                \"https://swapi.dev/api/species/20/\",\n                \"https://swapi.dev/api/species/21/\",\n                \"https://swapi.dev/api/species/22/\",\n                \"https://swapi.dev/api/species/23/\",\n                \"https://swapi.dev/api/species/24/\",\n                \"https://swapi.dev/api/species/25/\",\n                \"https://swapi.dev/api/species/26/\",\n                \"https://swapi.dev/api/species/27/\"\n            ],\n            \"created\": \"2014-12-19T16:52:55.740000Z\",\n            \"edited\": \"2014-12-20T10:54:07.216000Z\",\n            \"url\": \"https://swapi.dev/api/films/4/\"\n        },\n        {\n            \"title\": \"Attack of the Clones\",\n            \"episode_id\": 2,\n            \"opening_crawl\": \"There is unrest in the Galactic\\r\\nSenate. Several thousand solar\\r\\nsystems have declared their\\r\\nintentions to leave the Republic.\\r\\n\\r\\nThis separatist movement,\\r\\nunder the leadership of the\\r\\nmysterious Count Dooku, has\\r\\nmade it difficult for the limited\\r\\nnumber of Jedi Knights to maintain \\r\\npeace and order in the galaxy.\\r\\n\\r\\nSenator Amidala, the former\\r\\nQueen of Naboo, is returning\\r\\nto the Galactic Senate to vote\\r\\non the critical issue of creating\\r\\nan ARMY OF THE REPUBLIC\\r\\nto assist the overwhelmed\\r\\nJedi....\",\n            \"director\": \"George Lucas\",\n            \"producer\": \"Rick McCallum\",\n            \"release_date\": \"2002-05-16\",\n            \"characters\": [\n                \"https://swapi.dev/api/people/2/\",\n                \"https://swapi.dev/api/people/3/\",\n                \"https://swapi.dev/api/people/6/\",\n                \"https://swapi.dev/api/people/7/\",\n                \"https://swapi.dev/api/people/10/\",\n                \"https://swapi.dev/api/people/11/\",\n                \"https://swapi.dev/api/people/20/\",\n                \"https://swapi.dev/api/people/21/\",\n                \"https://swapi.dev/api/people/22/\",\n                \"https://swapi.dev/api/people/33/\",\n                \"https://swapi.dev/api/people/35/\",\n                \"https://swapi.dev/api/people/36/\",\n                \"https://swapi.dev/api/people/40/\",\n                \"https://swapi.dev/api/people/43/\",\n                \"https://swapi.dev/api/people/46/\",\n                \"https://swapi.dev/api/people/51/\",\n                \"https://swapi.dev/api/people/52/\",\n                \"https://swapi.dev/api/people/53/\",\n                \"https://swapi.dev/api/people/58/\",\n                \"https://swapi.dev/api/people/59/\",\n                \"https://swapi.dev/api/people/60/\",\n                \"https://swapi.dev/api/people/61/\",\n                \"https://swapi.dev/api/people/62/\",\n                \"https://swapi.dev/api/people/63/\",\n                \"https://swapi.dev/api/people/64/\",\n                \"https://swapi.dev/api/people/65/\",\n                \"https://swapi.dev/api/people/66/\",\n                \"https://swapi.dev/api/people/67/\",\n                \"https://swapi.dev/api/people/68/\",\n                \"https://swapi.dev/api/people/69/\",\n                \"https://swapi.dev/api/people/70/\",\n                \"https://swapi.dev/api/people/71/\",\n                \"https://swapi.dev/api/people/72/\",\n                \"https://swapi.dev/api/people/73/\",\n                \"https://swapi.dev/api/people/74/\",\n                \"https://swapi.dev/api/people/75/\",\n                \"https://swapi.dev/api/people/76/\",\n                \"https://swapi.dev/api/people/77/\",\n                \"https://swapi.dev/api/people/78/\",\n                \"https://swapi.dev/api/people/82/\"\n            ],\n            \"planets\": [\n                \"https://swapi.dev/api/planets/1/\",\n                \"https://swapi.dev/api/planets/8/\",\n                \"https://swapi.dev/api/planets/9/\",\n                \"https://swapi.dev/api/planets/10/\",\n                \"https://swapi.dev/api/planets/11/\"\n            ],\n            \"starships\": [\n                \"https://swapi.dev/api/starships/21/\",\n                \"https://swapi.dev/api/starships/32/\",\n                \"https://swapi.dev/api/starships/39/\",\n                \"https://swapi.dev/api/starships/43/\",\n                \"https://swapi.dev/api/starships/47/\",\n                \"https://swapi.dev/api/starships/48/\",\n                \"https://swapi.dev/api/starships/49/\",\n                \"https://swapi.dev/api/starships/52/\",\n                \"https://swapi.dev/api/starships/58/\"\n            ],\n            \"vehicles\": [\n                \"https://swapi.dev/api/vehicles/4/\",\n                \"https://swapi.dev/api/vehicles/44/\",\n                \"https://swapi.dev/api/vehicles/45/\",\n                \"https://swapi.dev/api/vehicles/46/\",\n                \"https://swapi.dev/api/vehicles/50/\",\n                \"https://swapi.dev/api/vehicles/51/\",\n                \"https://swapi.dev/api/vehicles/53/\",\n                \"https://swapi.dev/api/vehicles/54/\",\n                \"https://swapi.dev/api/vehicles/55/\",\n                \"https://swapi.dev/api/vehicles/56/\",\n                \"https://swapi.dev/api/vehicles/57/\"\n            ],\n            \"species\": [\n                \"https://swapi.dev/api/species/1/\",\n                \"https://swapi.dev/api/species/2/\",\n                \"https://swapi.dev/api/species/6/\",\n                \"https://swapi.dev/api/species/12/\",\n                \"https://swapi.dev/api/species/13/\",\n                \"https://swapi.dev/api/species/15/\",\n                \"https://swapi.dev/api/species/28/\",\n                \"https://swapi.dev/api/species/29/\",\n                \"https://swapi.dev/api/species/30/\",\n                \"https://swapi.dev/api/species/31/\",\n                \"https://swapi.dev/api/species/32/\",\n                \"https://swapi.dev/api/species/33/\",\n                \"https://swapi.dev/api/species/34/\",\n                \"https://swapi.dev/api/species/35/\"\n            ],\n            \"created\": \"2014-12-20T10:57:57.886000Z\",\n            \"edited\": \"2014-12-20T20:18:48.516000Z\",\n            \"url\": \"https://swapi.dev/api/films/5/\"\n        },\n        {\n            \"title\": \"Revenge of the Sith\",\n            \"episode_id\": 3,\n            \"opening_crawl\": \"War! The Republic is crumbling\\r\\nunder attacks by the ruthless\\r\\nSith Lord, Count Dooku.\\r\\nThere are heroes on both sides.\\r\\nEvil is everywhere.\\r\\n\\r\\nIn a stunning move, the\\r\\nfiendish droid leader, General\\r\\nGrievous, has swept into the\\r\\nRepublic capital and kidnapped\\r\\nChancellor Palpatine, leader of\\r\\nthe Galactic Senate.\\r\\n\\r\\nAs the Separatist Droid Army\\r\\nattempts to flee the besieged\\r\\ncapital with their valuable\\r\\nhostage, two Jedi Knights lead a\\r\\ndesperate mission to rescue the\\r\\ncaptive Chancellor....\",\n            \"director\": \"George Lucas\",\n            \"producer\": \"Rick McCallum\",\n            \"release_date\": \"2005-05-19\",\n            \"characters\": [\n                \"https://swapi.dev/api/people/1/\",\n                \"https://swapi.dev/api/people/2/\",\n                \"https://swapi.dev/api/people/3/\",\n                \"https://swapi.dev/api/people/4/\",\n                \"https://swapi.dev/api/people/5/\",\n                \"https://swapi.dev/api/people/6/\",\n                \"https://swapi.dev/api/people/7/\",\n                \"https://swapi.dev/api/people/10/\",\n                \"https://swapi.dev/api/people/11/\",\n                \"https://swapi.dev/api/people/12/\",\n                \"https://swapi.dev/api/people/13/\",\n                \"https://swapi.dev/api/people/20/\",\n                \"https://swapi.dev/api/people/21/\",\n                \"https://swapi.dev/api/people/33/\",\n                \"https://swapi.dev/api/people/35/\",\n                \"https://swapi.dev/api/people/46/\",\n                \"https://swapi.dev/api/people/51/\",\n                \"https://swapi.dev/api/people/52/\",\n                \"https://swapi.dev/api/people/53/\",\n                \"https://swapi.dev/api/people/54/\",\n                \"https://swapi.dev/api/people/55/\",\n                \"https://swapi.dev/api/people/56/\",\n                \"https://swapi.dev/api/people/58/\",\n                \"https://swapi.dev/api/people/63/\",\n                \"https://swapi.dev/api/people/64/\",\n                \"https://swapi.dev/api/people/67/\",\n                \"https://swapi.dev/api/people/68/\",\n                \"https://swapi.dev/api/people/75/\",\n                \"https://swapi.dev/api/people/78/\",\n                \"https://swapi.dev/api/people/79/\",\n                \"https://swapi.dev/api/people/80/\",\n                \"https://swapi.dev/api/people/81/\",\n                \"https://swapi.dev/api/people/82/\",\n                \"https://swapi.dev/api/people/83/\"\n            ],\n            \"planets\": [\n                \"https://swapi.dev/api/planets/1/\",\n                \"https://swapi.dev/api/planets/2/\",\n                \"https://swapi.dev/api/planets/5/\",\n                \"https://swapi.dev/api/planets/8/\",\n                \"https://swapi.dev/api/planets/9/\",\n                \"https://swapi.dev/api/planets/12/\",\n                \"https://swapi.dev/api/planets/13/\",\n                \"https://swapi.dev/api/planets/14/\",\n                \"https://swapi.dev/api/planets/15/\",\n                \"https://swapi.dev/api/planets/16/\",\n                \"https://swapi.dev/api/planets/17/\",\n                \"https://swapi.dev/api/planets/18/\",\n                \"https://swapi.dev/api/planets/19/\"\n            ],\n            \"starships\": [\n                \"https://swapi.dev/api/starships/2/\",\n                \"https://swapi.dev/api/starships/32/\",\n                \"https://swapi.dev/api/starships/48/\",\n                \"https://swapi.dev/api/starships/59/\",\n                \"https://swapi.dev/api/starships/61/\",\n                \"https://swapi.dev/api/starships/63/\",\n                \"https://swapi.dev/api/starships/64/\",\n                \"https://swapi.dev/api/starships/65/\",\n                \"https://swapi.dev/api/starships/66/\",\n                \"https://swapi.dev/api/starships/68/\",\n                \"https://swapi.dev/api/starships/74/\",\n                \"https://swapi.dev/api/starships/75/\"\n            ],\n            \"vehicles\": [\n                \"https://swapi.dev/api/vehicles/33/\",\n                \"https://swapi.dev/api/vehicles/50/\",\n                \"https://swapi.dev/api/vehicles/53/\",\n                \"https://swapi.dev/api/vehicles/56/\",\n                \"https://swapi.dev/api/vehicles/60/\",\n                \"https://swapi.dev/api/vehicles/62/\",\n                \"https://swapi.dev/api/vehicles/67/\",\n                \"https://swapi.dev/api/vehicles/69/\",\n                \"https://swapi.dev/api/vehicles/70/\",\n                \"https://swapi.dev/api/vehicles/71/\",\n                \"https://swapi.dev/api/vehicles/72/\",\n                \"https://swapi.dev/api/vehicles/73/\",\n                \"https://swapi.dev/api/vehicles/76/\"\n            ],\n            \"species\": [\n                \"https://swapi.dev/api/species/1/\",\n                \"https://swapi.dev/api/species/2/\",\n                \"https://swapi.dev/api/species/3/\",\n                \"https://swapi.dev/api/species/6/\",\n                \"https://swapi.dev/api/species/15/\",\n                \"https://swapi.dev/api/species/19/\",\n                \"https://swapi.dev/api/species/20/\",\n                \"https://swapi.dev/api/species/23/\",\n                \"https://swapi.dev/api/species/24/\",\n                \"https://swapi.dev/api/species/25/\",\n                \"https://swapi.dev/api/species/26/\",\n                \"https://swapi.dev/api/species/27/\",\n                \"https://swapi.dev/api/species/28/\",\n                \"https://swapi.dev/api/species/29/\",\n                \"https://swapi.dev/api/species/30/\",\n                \"https://swapi.dev/api/species/33/\",\n                \"https://swapi.dev/api/species/34/\",\n                \"https://swapi.dev/api/species/35/\",\n                \"https://swapi.dev/api/species/36/\",\n                \"https://swapi.dev/api/species/37/\"\n            ],\n            \"created\": \"2014-12-20T18:49:38.403000Z\",\n            \"edited\": \"2014-12-20T20:47:52.073000Z\",\n            \"url\": \"https://swapi.dev/api/films/6/\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET all Species",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/species/",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"species",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET all Species",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/species/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"species",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.16.1"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Oct 2025 06:59:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "ETag",
+							"value": "\"0c718baefceacab640ee96782f156b25\""
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 37,\n    \"next\": \"https://swapi.dev/api/species/?page=2\",\n    \"previous\": null,\n    \"results\": [\n        {\n            \"name\": \"Human\",\n            \"classification\": \"mammal\",\n            \"designation\": \"sentient\",\n            \"average_height\": \"180\",\n            \"skin_colors\": \"caucasian, black, asian, hispanic\",\n            \"hair_colors\": \"blonde, brown, black, red\",\n            \"eye_colors\": \"brown, blue, green, hazel, grey, amber\",\n            \"average_lifespan\": \"120\",\n            \"homeworld\": \"https://swapi.dev/api/planets/9/\",\n            \"language\": \"Galactic Basic\",\n            \"people\": [\n                \"https://swapi.dev/api/people/66/\",\n                \"https://swapi.dev/api/people/67/\",\n                \"https://swapi.dev/api/people/68/\",\n                \"https://swapi.dev/api/people/74/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/4/\",\n                \"https://swapi.dev/api/films/5/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"created\": \"2014-12-10T13:52:11.567000Z\",\n            \"edited\": \"2014-12-20T21:36:42.136000Z\",\n            \"url\": \"https://swapi.dev/api/species/1/\"\n        },\n        {\n            \"name\": \"Droid\",\n            \"classification\": \"artificial\",\n            \"designation\": \"sentient\",\n            \"average_height\": \"n/a\",\n            \"skin_colors\": \"n/a\",\n            \"hair_colors\": \"n/a\",\n            \"eye_colors\": \"n/a\",\n            \"average_lifespan\": \"indefinite\",\n            \"homeworld\": null,\n            \"language\": \"n/a\",\n            \"people\": [\n                \"https://swapi.dev/api/people/2/\",\n                \"https://swapi.dev/api/people/3/\",\n                \"https://swapi.dev/api/people/8/\",\n                \"https://swapi.dev/api/people/23/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/4/\",\n                \"https://swapi.dev/api/films/5/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"created\": \"2014-12-10T15:16:16.259000Z\",\n            \"edited\": \"2014-12-20T21:36:42.139000Z\",\n            \"url\": \"https://swapi.dev/api/species/2/\"\n        },\n        {\n            \"name\": \"Wookie\",\n            \"classification\": \"mammal\",\n            \"designation\": \"sentient\",\n            \"average_height\": \"210\",\n            \"skin_colors\": \"gray\",\n            \"hair_colors\": \"black, brown\",\n            \"eye_colors\": \"blue, green, yellow, brown, golden, red\",\n            \"average_lifespan\": \"400\",\n            \"homeworld\": \"https://swapi.dev/api/planets/14/\",\n            \"language\": \"Shyriiwook\",\n            \"people\": [\n                \"https://swapi.dev/api/people/13/\",\n                \"https://swapi.dev/api/people/80/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"created\": \"2014-12-10T16:44:31.486000Z\",\n            \"edited\": \"2014-12-20T21:36:42.142000Z\",\n            \"url\": \"https://swapi.dev/api/species/3/\"\n        },\n        {\n            \"name\": \"Rodian\",\n            \"classification\": \"sentient\",\n            \"designation\": \"reptilian\",\n            \"average_height\": \"170\",\n            \"skin_colors\": \"green, blue\",\n            \"hair_colors\": \"n/a\",\n            \"eye_colors\": \"black\",\n            \"average_lifespan\": \"unknown\",\n            \"homeworld\": \"https://swapi.dev/api/planets/23/\",\n            \"language\": \"Galatic Basic\",\n            \"people\": [\n                \"https://swapi.dev/api/people/15/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\"\n            ],\n            \"created\": \"2014-12-10T17:05:26.471000Z\",\n            \"edited\": \"2014-12-20T21:36:42.144000Z\",\n            \"url\": \"https://swapi.dev/api/species/4/\"\n        },\n        {\n            \"name\": \"Hutt\",\n            \"classification\": \"gastropod\",\n            \"designation\": \"sentient\",\n            \"average_height\": \"300\",\n            \"skin_colors\": \"green, brown, tan\",\n            \"hair_colors\": \"n/a\",\n            \"eye_colors\": \"yellow, red\",\n            \"average_lifespan\": \"1000\",\n            \"homeworld\": \"https://swapi.dev/api/planets/24/\",\n            \"language\": \"Huttese\",\n            \"people\": [\n                \"https://swapi.dev/api/people/16/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-10T17:12:50.410000Z\",\n            \"edited\": \"2014-12-20T21:36:42.146000Z\",\n            \"url\": \"https://swapi.dev/api/species/5/\"\n        },\n        {\n            \"name\": \"Yoda's species\",\n            \"classification\": \"mammal\",\n            \"designation\": \"sentient\",\n            \"average_height\": \"66\",\n            \"skin_colors\": \"green, yellow\",\n            \"hair_colors\": \"brown, white\",\n            \"eye_colors\": \"brown, green, yellow\",\n            \"average_lifespan\": \"900\",\n            \"homeworld\": \"https://swapi.dev/api/planets/28/\",\n            \"language\": \"Galactic basic\",\n            \"people\": [\n                \"https://swapi.dev/api/people/20/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/4/\",\n                \"https://swapi.dev/api/films/5/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"created\": \"2014-12-15T12:27:22.877000Z\",\n            \"edited\": \"2014-12-20T21:36:42.148000Z\",\n            \"url\": \"https://swapi.dev/api/species/6/\"\n        },\n        {\n            \"name\": \"Trandoshan\",\n            \"classification\": \"reptile\",\n            \"designation\": \"sentient\",\n            \"average_height\": \"200\",\n            \"skin_colors\": \"brown, green\",\n            \"hair_colors\": \"none\",\n            \"eye_colors\": \"yellow, orange\",\n            \"average_lifespan\": \"unknown\",\n            \"homeworld\": \"https://swapi.dev/api/planets/29/\",\n            \"language\": \"Dosh\",\n            \"people\": [\n                \"https://swapi.dev/api/people/24/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\"\n            ],\n            \"created\": \"2014-12-15T13:07:47.704000Z\",\n            \"edited\": \"2014-12-20T21:36:42.151000Z\",\n            \"url\": \"https://swapi.dev/api/species/7/\"\n        },\n        {\n            \"name\": \"Mon Calamari\",\n            \"classification\": \"amphibian\",\n            \"designation\": \"sentient\",\n            \"average_height\": \"160\",\n            \"skin_colors\": \"red, blue, brown, magenta\",\n            \"hair_colors\": \"none\",\n            \"eye_colors\": \"yellow\",\n            \"average_lifespan\": \"unknown\",\n            \"homeworld\": \"https://swapi.dev/api/planets/31/\",\n            \"language\": \"Mon Calamarian\",\n            \"people\": [\n                \"https://swapi.dev/api/people/27/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-18T11:09:52.263000Z\",\n            \"edited\": \"2014-12-20T21:36:42.153000Z\",\n            \"url\": \"https://swapi.dev/api/species/8/\"\n        },\n        {\n            \"name\": \"Ewok\",\n            \"classification\": \"mammal\",\n            \"designation\": \"sentient\",\n            \"average_height\": \"100\",\n            \"skin_colors\": \"brown\",\n            \"hair_colors\": \"white, brown, black\",\n            \"eye_colors\": \"orange, brown\",\n            \"average_lifespan\": \"unknown\",\n            \"homeworld\": \"https://swapi.dev/api/planets/7/\",\n            \"language\": \"Ewokese\",\n            \"people\": [\n                \"https://swapi.dev/api/people/30/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-18T11:22:00.285000Z\",\n            \"edited\": \"2014-12-20T21:36:42.155000Z\",\n            \"url\": \"https://swapi.dev/api/species/9/\"\n        },\n        {\n            \"name\": \"Sullustan\",\n            \"classification\": \"mammal\",\n            \"designation\": \"sentient\",\n            \"average_height\": \"180\",\n            \"skin_colors\": \"pale\",\n            \"hair_colors\": \"none\",\n            \"eye_colors\": \"black\",\n            \"average_lifespan\": \"unknown\",\n            \"homeworld\": \"https://swapi.dev/api/planets/33/\",\n            \"language\": \"Sullutese\",\n            \"people\": [\n                \"https://swapi.dev/api/people/31/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-18T11:26:20.103000Z\",\n            \"edited\": \"2014-12-20T21:36:42.157000Z\",\n            \"url\": \"https://swapi.dev/api/species/10/\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET all Vehicles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/vehicles/",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"vehicles",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET all Vehicles",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/vehicles/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"vehicles",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.16.1"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Oct 2025 06:59:57 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "ETag",
+							"value": "\"07ce0a7ff4d543e56c3c64af89bfc766\""
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 39,\n    \"next\": \"https://swapi.dev/api/vehicles/?page=2\",\n    \"previous\": null,\n    \"results\": [\n        {\n            \"name\": \"Sand Crawler\",\n            \"model\": \"Digger Crawler\",\n            \"manufacturer\": \"Corellia Mining Corporation\",\n            \"cost_in_credits\": \"150000\",\n            \"length\": \"36.8 \",\n            \"max_atmosphering_speed\": \"30\",\n            \"crew\": \"46\",\n            \"passengers\": \"30\",\n            \"cargo_capacity\": \"50000\",\n            \"consumables\": \"2 months\",\n            \"vehicle_class\": \"wheeled\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/5/\"\n            ],\n            \"created\": \"2014-12-10T15:36:25.724000Z\",\n            \"edited\": \"2014-12-20T21:30:21.661000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/4/\"\n        },\n        {\n            \"name\": \"T-16 skyhopper\",\n            \"model\": \"T-16 skyhopper\",\n            \"manufacturer\": \"Incom Corporation\",\n            \"cost_in_credits\": \"14500\",\n            \"length\": \"10.4 \",\n            \"max_atmosphering_speed\": \"1200\",\n            \"crew\": \"1\",\n            \"passengers\": \"1\",\n            \"cargo_capacity\": \"50\",\n            \"consumables\": \"0\",\n            \"vehicle_class\": \"repulsorcraft\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\"\n            ],\n            \"created\": \"2014-12-10T16:01:52.434000Z\",\n            \"edited\": \"2014-12-20T21:30:21.665000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/6/\"\n        },\n        {\n            \"name\": \"X-34 landspeeder\",\n            \"model\": \"X-34 landspeeder\",\n            \"manufacturer\": \"SoroSuub Corporation\",\n            \"cost_in_credits\": \"10550\",\n            \"length\": \"3.4 \",\n            \"max_atmosphering_speed\": \"250\",\n            \"crew\": \"1\",\n            \"passengers\": \"1\",\n            \"cargo_capacity\": \"5\",\n            \"consumables\": \"unknown\",\n            \"vehicle_class\": \"repulsorcraft\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\"\n            ],\n            \"created\": \"2014-12-10T16:13:52.586000Z\",\n            \"edited\": \"2014-12-20T21:30:21.668000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/7/\"\n        },\n        {\n            \"name\": \"TIE/LN starfighter\",\n            \"model\": \"Twin Ion Engine/Ln Starfighter\",\n            \"manufacturer\": \"Sienar Fleet Systems\",\n            \"cost_in_credits\": \"unknown\",\n            \"length\": \"6.4\",\n            \"max_atmosphering_speed\": \"1200\",\n            \"crew\": \"1\",\n            \"passengers\": \"0\",\n            \"cargo_capacity\": \"65\",\n            \"consumables\": \"2 days\",\n            \"vehicle_class\": \"starfighter\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-10T16:33:52.860000Z\",\n            \"edited\": \"2014-12-20T21:30:21.670000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/8/\"\n        },\n        {\n            \"name\": \"Snowspeeder\",\n            \"model\": \"t-47 airspeeder\",\n            \"manufacturer\": \"Incom corporation\",\n            \"cost_in_credits\": \"unknown\",\n            \"length\": \"4.5\",\n            \"max_atmosphering_speed\": \"650\",\n            \"crew\": \"2\",\n            \"passengers\": \"0\",\n            \"cargo_capacity\": \"10\",\n            \"consumables\": \"none\",\n            \"vehicle_class\": \"airspeeder\",\n            \"pilots\": [\n                \"https://swapi.dev/api/people/1/\",\n                \"https://swapi.dev/api/people/18/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\"\n            ],\n            \"created\": \"2014-12-15T12:22:12Z\",\n            \"edited\": \"2014-12-20T21:30:21.672000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/14/\"\n        },\n        {\n            \"name\": \"TIE bomber\",\n            \"model\": \"TIE/sa bomber\",\n            \"manufacturer\": \"Sienar Fleet Systems\",\n            \"cost_in_credits\": \"unknown\",\n            \"length\": \"7.8\",\n            \"max_atmosphering_speed\": \"850\",\n            \"crew\": \"1\",\n            \"passengers\": \"0\",\n            \"cargo_capacity\": \"none\",\n            \"consumables\": \"2 days\",\n            \"vehicle_class\": \"space/planetary bomber\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-15T12:33:15.838000Z\",\n            \"edited\": \"2014-12-20T21:30:21.675000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/16/\"\n        },\n        {\n            \"name\": \"AT-AT\",\n            \"model\": \"All Terrain Armored Transport\",\n            \"manufacturer\": \"Kuat Drive Yards, Imperial Department of Military Research\",\n            \"cost_in_credits\": \"unknown\",\n            \"length\": \"20\",\n            \"max_atmosphering_speed\": \"60\",\n            \"crew\": \"5\",\n            \"passengers\": \"40\",\n            \"cargo_capacity\": \"1000\",\n            \"consumables\": \"unknown\",\n            \"vehicle_class\": \"assault walker\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-15T12:38:25.937000Z\",\n            \"edited\": \"2014-12-20T21:30:21.677000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/18/\"\n        },\n        {\n            \"name\": \"AT-ST\",\n            \"model\": \"All Terrain Scout Transport\",\n            \"manufacturer\": \"Kuat Drive Yards, Imperial Department of Military Research\",\n            \"cost_in_credits\": \"unknown\",\n            \"length\": \"2\",\n            \"max_atmosphering_speed\": \"90\",\n            \"crew\": \"2\",\n            \"passengers\": \"0\",\n            \"cargo_capacity\": \"200\",\n            \"consumables\": \"none\",\n            \"vehicle_class\": \"walker\",\n            \"pilots\": [\n                \"https://swapi.dev/api/people/13/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-15T12:46:42.384000Z\",\n            \"edited\": \"2014-12-20T21:30:21.679000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/19/\"\n        },\n        {\n            \"name\": \"Storm IV Twin-Pod cloud car\",\n            \"model\": \"Storm IV Twin-Pod\",\n            \"manufacturer\": \"Bespin Motors\",\n            \"cost_in_credits\": \"75000\",\n            \"length\": \"7\",\n            \"max_atmosphering_speed\": \"1500\",\n            \"crew\": \"2\",\n            \"passengers\": \"0\",\n            \"cargo_capacity\": \"10\",\n            \"consumables\": \"1 day\",\n            \"vehicle_class\": \"repulsorcraft\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\"\n            ],\n            \"created\": \"2014-12-15T12:58:50.530000Z\",\n            \"edited\": \"2014-12-20T21:30:21.681000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/20/\"\n        },\n        {\n            \"name\": \"Sail barge\",\n            \"model\": \"Modified Luxury Sail Barge\",\n            \"manufacturer\": \"Ubrikkian Industries Custom Vehicle Division\",\n            \"cost_in_credits\": \"285000\",\n            \"length\": \"30\",\n            \"max_atmosphering_speed\": \"100\",\n            \"crew\": \"26\",\n            \"passengers\": \"500\",\n            \"cargo_capacity\": \"2000000\",\n            \"consumables\": \"Live food tanks\",\n            \"vehicle_class\": \"sail barge\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-18T10:44:14.217000Z\",\n            \"edited\": \"2014-12-20T21:30:21.684000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/24/\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET all Starships",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/starships/",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"starships",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET all Starships",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/starships/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"starships",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.16.1"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Oct 2025 07:00:06 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "ETag",
+							"value": "\"544fff13df3c511d1aaaa3ad26d3e6a2\""
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 36,\n    \"next\": \"https://swapi.dev/api/starships/?page=2\",\n    \"previous\": null,\n    \"results\": [\n        {\n            \"name\": \"CR90 corvette\",\n            \"model\": \"CR90 corvette\",\n            \"manufacturer\": \"Corellian Engineering Corporation\",\n            \"cost_in_credits\": \"3500000\",\n            \"length\": \"150\",\n            \"max_atmosphering_speed\": \"950\",\n            \"crew\": \"30-165\",\n            \"passengers\": \"600\",\n            \"cargo_capacity\": \"3000000\",\n            \"consumables\": \"1 year\",\n            \"hyperdrive_rating\": \"2.0\",\n            \"MGLT\": \"60\",\n            \"starship_class\": \"corvette\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"created\": \"2014-12-10T14:20:33.369000Z\",\n            \"edited\": \"2014-12-20T21:23:49.867000Z\",\n            \"url\": \"https://swapi.dev/api/starships/2/\"\n        },\n        {\n            \"name\": \"Star Destroyer\",\n            \"model\": \"Imperial I-class Star Destroyer\",\n            \"manufacturer\": \"Kuat Drive Yards\",\n            \"cost_in_credits\": \"150000000\",\n            \"length\": \"1,600\",\n            \"max_atmosphering_speed\": \"975\",\n            \"crew\": \"47,060\",\n            \"passengers\": \"n/a\",\n            \"cargo_capacity\": \"36000000\",\n            \"consumables\": \"2 years\",\n            \"hyperdrive_rating\": \"2.0\",\n            \"MGLT\": \"60\",\n            \"starship_class\": \"Star Destroyer\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-10T15:08:19.848000Z\",\n            \"edited\": \"2014-12-20T21:23:49.870000Z\",\n            \"url\": \"https://swapi.dev/api/starships/3/\"\n        },\n        {\n            \"name\": \"Sentinel-class landing craft\",\n            \"model\": \"Sentinel-class landing craft\",\n            \"manufacturer\": \"Sienar Fleet Systems, Cyngus Spaceworks\",\n            \"cost_in_credits\": \"240000\",\n            \"length\": \"38\",\n            \"max_atmosphering_speed\": \"1000\",\n            \"crew\": \"5\",\n            \"passengers\": \"75\",\n            \"cargo_capacity\": \"180000\",\n            \"consumables\": \"1 month\",\n            \"hyperdrive_rating\": \"1.0\",\n            \"MGLT\": \"70\",\n            \"starship_class\": \"landing craft\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\"\n            ],\n            \"created\": \"2014-12-10T15:48:00.586000Z\",\n            \"edited\": \"2014-12-20T21:23:49.873000Z\",\n            \"url\": \"https://swapi.dev/api/starships/5/\"\n        },\n        {\n            \"name\": \"Death Star\",\n            \"model\": \"DS-1 Orbital Battle Station\",\n            \"manufacturer\": \"Imperial Department of Military Research, Sienar Fleet Systems\",\n            \"cost_in_credits\": \"1000000000000\",\n            \"length\": \"120000\",\n            \"max_atmosphering_speed\": \"n/a\",\n            \"crew\": \"342,953\",\n            \"passengers\": \"843,342\",\n            \"cargo_capacity\": \"1000000000000\",\n            \"consumables\": \"3 years\",\n            \"hyperdrive_rating\": \"4.0\",\n            \"MGLT\": \"10\",\n            \"starship_class\": \"Deep Space Mobile Battlestation\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\"\n            ],\n            \"created\": \"2014-12-10T16:36:50.509000Z\",\n            \"edited\": \"2014-12-20T21:26:24.783000Z\",\n            \"url\": \"https://swapi.dev/api/starships/9/\"\n        },\n        {\n            \"name\": \"Millennium Falcon\",\n            \"model\": \"YT-1300 light freighter\",\n            \"manufacturer\": \"Corellian Engineering Corporation\",\n            \"cost_in_credits\": \"100000\",\n            \"length\": \"34.37\",\n            \"max_atmosphering_speed\": \"1050\",\n            \"crew\": \"4\",\n            \"passengers\": \"6\",\n            \"cargo_capacity\": \"100000\",\n            \"consumables\": \"2 months\",\n            \"hyperdrive_rating\": \"0.5\",\n            \"MGLT\": \"75\",\n            \"starship_class\": \"Light freighter\",\n            \"pilots\": [\n                \"https://swapi.dev/api/people/13/\",\n                \"https://swapi.dev/api/people/14/\",\n                \"https://swapi.dev/api/people/25/\",\n                \"https://swapi.dev/api/people/31/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-10T16:59:45.094000Z\",\n            \"edited\": \"2014-12-20T21:23:49.880000Z\",\n            \"url\": \"https://swapi.dev/api/starships/10/\"\n        },\n        {\n            \"name\": \"Y-wing\",\n            \"model\": \"BTL Y-wing\",\n            \"manufacturer\": \"Koensayr Manufacturing\",\n            \"cost_in_credits\": \"134999\",\n            \"length\": \"14\",\n            \"max_atmosphering_speed\": \"1000km\",\n            \"crew\": \"2\",\n            \"passengers\": \"0\",\n            \"cargo_capacity\": \"110\",\n            \"consumables\": \"1 week\",\n            \"hyperdrive_rating\": \"1.0\",\n            \"MGLT\": \"80\",\n            \"starship_class\": \"assault starfighter\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-12T11:00:39.817000Z\",\n            \"edited\": \"2014-12-20T21:23:49.883000Z\",\n            \"url\": \"https://swapi.dev/api/starships/11/\"\n        },\n        {\n            \"name\": \"X-wing\",\n            \"model\": \"T-65 X-wing\",\n            \"manufacturer\": \"Incom Corporation\",\n            \"cost_in_credits\": \"149999\",\n            \"length\": \"12.5\",\n            \"max_atmosphering_speed\": \"1050\",\n            \"crew\": \"1\",\n            \"passengers\": \"0\",\n            \"cargo_capacity\": \"110\",\n            \"consumables\": \"1 week\",\n            \"hyperdrive_rating\": \"1.0\",\n            \"MGLT\": \"100\",\n            \"starship_class\": \"Starfighter\",\n            \"pilots\": [\n                \"https://swapi.dev/api/people/1/\",\n                \"https://swapi.dev/api/people/9/\",\n                \"https://swapi.dev/api/people/18/\",\n                \"https://swapi.dev/api/people/19/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-12T11:19:05.340000Z\",\n            \"edited\": \"2014-12-20T21:23:49.886000Z\",\n            \"url\": \"https://swapi.dev/api/starships/12/\"\n        },\n        {\n            \"name\": \"TIE Advanced x1\",\n            \"model\": \"Twin Ion Engine Advanced x1\",\n            \"manufacturer\": \"Sienar Fleet Systems\",\n            \"cost_in_credits\": \"unknown\",\n            \"length\": \"9.2\",\n            \"max_atmosphering_speed\": \"1200\",\n            \"crew\": \"1\",\n            \"passengers\": \"0\",\n            \"cargo_capacity\": \"150\",\n            \"consumables\": \"5 days\",\n            \"hyperdrive_rating\": \"1.0\",\n            \"MGLT\": \"105\",\n            \"starship_class\": \"Starfighter\",\n            \"pilots\": [\n                \"https://swapi.dev/api/people/4/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\"\n            ],\n            \"created\": \"2014-12-12T11:21:32.991000Z\",\n            \"edited\": \"2014-12-20T21:23:49.889000Z\",\n            \"url\": \"https://swapi.dev/api/starships/13/\"\n        },\n        {\n            \"name\": \"Executor\",\n            \"model\": \"Executor-class star dreadnought\",\n            \"manufacturer\": \"Kuat Drive Yards, Fondor Shipyards\",\n            \"cost_in_credits\": \"1143350000\",\n            \"length\": \"19000\",\n            \"max_atmosphering_speed\": \"n/a\",\n            \"crew\": \"279,144\",\n            \"passengers\": \"38000\",\n            \"cargo_capacity\": \"250000000\",\n            \"consumables\": \"6 years\",\n            \"hyperdrive_rating\": \"2.0\",\n            \"MGLT\": \"40\",\n            \"starship_class\": \"Star dreadnought\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-15T12:31:42.547000Z\",\n            \"edited\": \"2014-12-20T21:23:49.893000Z\",\n            \"url\": \"https://swapi.dev/api/starships/15/\"\n        },\n        {\n            \"name\": \"Rebel transport\",\n            \"model\": \"GR-75 medium transport\",\n            \"manufacturer\": \"Gallofree Yards, Inc.\",\n            \"cost_in_credits\": \"unknown\",\n            \"length\": \"90\",\n            \"max_atmosphering_speed\": \"650\",\n            \"crew\": \"6\",\n            \"passengers\": \"90\",\n            \"cargo_capacity\": \"19000000\",\n            \"consumables\": \"6 months\",\n            \"hyperdrive_rating\": \"4.0\",\n            \"MGLT\": \"20\",\n            \"starship_class\": \"Medium transport\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-15T12:34:52.264000Z\",\n            \"edited\": \"2014-12-20T21:23:49.895000Z\",\n            \"url\": \"https://swapi.dev/api/starships/17/\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET all People",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET all People",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/people/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"people",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.16.1"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Oct 2025 07:00:12 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "ETag",
+							"value": "\"b493126da505af6fec015ec116fec193\""
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 82,\n    \"next\": \"https://swapi.dev/api/people/?page=2\",\n    \"previous\": null,\n    \"results\": [\n        {\n            \"name\": \"Luke Skywalker\",\n            \"height\": \"172\",\n            \"mass\": \"77\",\n            \"hair_color\": \"blond\",\n            \"skin_color\": \"fair\",\n            \"eye_color\": \"blue\",\n            \"birth_year\": \"19BBY\",\n            \"gender\": \"male\",\n            \"homeworld\": \"https://swapi.dev/api/planets/1/\",\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"species\": [],\n            \"vehicles\": [\n                \"https://swapi.dev/api/vehicles/14/\",\n                \"https://swapi.dev/api/vehicles/30/\"\n            ],\n            \"starships\": [\n                \"https://swapi.dev/api/starships/12/\",\n                \"https://swapi.dev/api/starships/22/\"\n            ],\n            \"created\": \"2014-12-09T13:50:51.644000Z\",\n            \"edited\": \"2014-12-20T21:17:56.891000Z\",\n            \"url\": \"https://swapi.dev/api/people/1/\"\n        },\n        {\n            \"name\": \"C-3PO\",\n            \"height\": \"167\",\n            \"mass\": \"75\",\n            \"hair_color\": \"n/a\",\n            \"skin_color\": \"gold\",\n            \"eye_color\": \"yellow\",\n            \"birth_year\": \"112BBY\",\n            \"gender\": \"n/a\",\n            \"homeworld\": \"https://swapi.dev/api/planets/1/\",\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/4/\",\n                \"https://swapi.dev/api/films/5/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"species\": [\n                \"https://swapi.dev/api/species/2/\"\n            ],\n            \"vehicles\": [],\n            \"starships\": [],\n            \"created\": \"2014-12-10T15:10:51.357000Z\",\n            \"edited\": \"2014-12-20T21:17:50.309000Z\",\n            \"url\": \"https://swapi.dev/api/people/2/\"\n        },\n        {\n            \"name\": \"R2-D2\",\n            \"height\": \"96\",\n            \"mass\": \"32\",\n            \"hair_color\": \"n/a\",\n            \"skin_color\": \"white, blue\",\n            \"eye_color\": \"red\",\n            \"birth_year\": \"33BBY\",\n            \"gender\": \"n/a\",\n            \"homeworld\": \"https://swapi.dev/api/planets/8/\",\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/4/\",\n                \"https://swapi.dev/api/films/5/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"species\": [\n                \"https://swapi.dev/api/species/2/\"\n            ],\n            \"vehicles\": [],\n            \"starships\": [],\n            \"created\": \"2014-12-10T15:11:50.376000Z\",\n            \"edited\": \"2014-12-20T21:17:50.311000Z\",\n            \"url\": \"https://swapi.dev/api/people/3/\"\n        },\n        {\n            \"name\": \"Darth Vader\",\n            \"height\": \"202\",\n            \"mass\": \"136\",\n            \"hair_color\": \"none\",\n            \"skin_color\": \"white\",\n            \"eye_color\": \"yellow\",\n            \"birth_year\": \"41.9BBY\",\n            \"gender\": \"male\",\n            \"homeworld\": \"https://swapi.dev/api/planets/1/\",\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"species\": [],\n            \"vehicles\": [],\n            \"starships\": [\n                \"https://swapi.dev/api/starships/13/\"\n            ],\n            \"created\": \"2014-12-10T15:18:20.704000Z\",\n            \"edited\": \"2014-12-20T21:17:50.313000Z\",\n            \"url\": \"https://swapi.dev/api/people/4/\"\n        },\n        {\n            \"name\": \"Leia Organa\",\n            \"height\": \"150\",\n            \"mass\": \"49\",\n            \"hair_color\": \"brown\",\n            \"skin_color\": \"light\",\n            \"eye_color\": \"brown\",\n            \"birth_year\": \"19BBY\",\n            \"gender\": \"female\",\n            \"homeworld\": \"https://swapi.dev/api/planets/2/\",\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"species\": [],\n            \"vehicles\": [\n                \"https://swapi.dev/api/vehicles/30/\"\n            ],\n            \"starships\": [],\n            \"created\": \"2014-12-10T15:20:09.791000Z\",\n            \"edited\": \"2014-12-20T21:17:50.315000Z\",\n            \"url\": \"https://swapi.dev/api/people/5/\"\n        },\n        {\n            \"name\": \"Owen Lars\",\n            \"height\": \"178\",\n            \"mass\": \"120\",\n            \"hair_color\": \"brown, grey\",\n            \"skin_color\": \"light\",\n            \"eye_color\": \"blue\",\n            \"birth_year\": \"52BBY\",\n            \"gender\": \"male\",\n            \"homeworld\": \"https://swapi.dev/api/planets/1/\",\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/5/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"species\": [],\n            \"vehicles\": [],\n            \"starships\": [],\n            \"created\": \"2014-12-10T15:52:14.024000Z\",\n            \"edited\": \"2014-12-20T21:17:50.317000Z\",\n            \"url\": \"https://swapi.dev/api/people/6/\"\n        },\n        {\n            \"name\": \"Beru Whitesun lars\",\n            \"height\": \"165\",\n            \"mass\": \"75\",\n            \"hair_color\": \"brown\",\n            \"skin_color\": \"light\",\n            \"eye_color\": \"blue\",\n            \"birth_year\": \"47BBY\",\n            \"gender\": \"female\",\n            \"homeworld\": \"https://swapi.dev/api/planets/1/\",\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/5/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"species\": [],\n            \"vehicles\": [],\n            \"starships\": [],\n            \"created\": \"2014-12-10T15:53:41.121000Z\",\n            \"edited\": \"2014-12-20T21:17:50.319000Z\",\n            \"url\": \"https://swapi.dev/api/people/7/\"\n        },\n        {\n            \"name\": \"R5-D4\",\n            \"height\": \"97\",\n            \"mass\": \"32\",\n            \"hair_color\": \"n/a\",\n            \"skin_color\": \"white, red\",\n            \"eye_color\": \"red\",\n            \"birth_year\": \"unknown\",\n            \"gender\": \"n/a\",\n            \"homeworld\": \"https://swapi.dev/api/planets/1/\",\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\"\n            ],\n            \"species\": [\n                \"https://swapi.dev/api/species/2/\"\n            ],\n            \"vehicles\": [],\n            \"starships\": [],\n            \"created\": \"2014-12-10T15:57:50.959000Z\",\n            \"edited\": \"2014-12-20T21:17:50.321000Z\",\n            \"url\": \"https://swapi.dev/api/people/8/\"\n        },\n        {\n            \"name\": \"Biggs Darklighter\",\n            \"height\": \"183\",\n            \"mass\": \"84\",\n            \"hair_color\": \"black\",\n            \"skin_color\": \"light\",\n            \"eye_color\": \"brown\",\n            \"birth_year\": \"24BBY\",\n            \"gender\": \"male\",\n            \"homeworld\": \"https://swapi.dev/api/planets/1/\",\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\"\n            ],\n            \"species\": [],\n            \"vehicles\": [],\n            \"starships\": [\n                \"https://swapi.dev/api/starships/12/\"\n            ],\n            \"created\": \"2014-12-10T15:59:50.509000Z\",\n            \"edited\": \"2014-12-20T21:17:50.323000Z\",\n            \"url\": \"https://swapi.dev/api/people/9/\"\n        },\n        {\n            \"name\": \"Obi-Wan Kenobi\",\n            \"height\": \"182\",\n            \"mass\": \"77\",\n            \"hair_color\": \"auburn, white\",\n            \"skin_color\": \"fair\",\n            \"eye_color\": \"blue-gray\",\n            \"birth_year\": \"57BBY\",\n            \"gender\": \"male\",\n            \"homeworld\": \"https://swapi.dev/api/planets/20/\",\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/4/\",\n                \"https://swapi.dev/api/films/5/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"species\": [],\n            \"vehicles\": [\n                \"https://swapi.dev/api/vehicles/38/\"\n            ],\n            \"starships\": [\n                \"https://swapi.dev/api/starships/48/\",\n                \"https://swapi.dev/api/starships/59/\",\n                \"https://swapi.dev/api/starships/64/\",\n                \"https://swapi.dev/api/starships/65/\",\n                \"https://swapi.dev/api/starships/74/\"\n            ],\n            \"created\": \"2014-12-10T16:16:29.192000Z\",\n            \"edited\": \"2014-12-20T21:17:50.325000Z\",\n            \"url\": \"https://swapi.dev/api/people/10/\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
