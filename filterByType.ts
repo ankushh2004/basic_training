@@ -1,9 +1,24 @@
-const filterByType = <T>(
+function filterByType<T extends string | number | boolean | object>(
   arr: unknown[],
   type: "string" | "number" | "boolean" | "object"
-): T[] => {
-  return arr.filter((item): item is T => typeof item === type && item != null);
-};
+): T[] {
+
+  // Type Guard Function
+  function isType(value: unknown): value is T {
+    switch (type) {
+      case "string":
+        return typeof value === "string";
+      case "number":
+        return typeof value === "number";
+      case "boolean":
+        return typeof value === "boolean";
+      case "object":
+        return typeof value === "object" && value !== null;
+    }
+  }
+
+  return arr.filter(isType);
+}
 
 // Test Array
 const array = [
